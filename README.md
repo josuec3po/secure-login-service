@@ -54,7 +54,7 @@ Nesta secção, documento a evolução do projeto e os desafios superados:
 
 * Fluxo de Registro: Criei uma função de registro que captura o input do usuario, gera o hash via `bcrypt` e salva os dados de forma segura no SQLite usando o comando `INSERT`.
 
-* Segurança na Consulta (**Aprendizado:**): Implementei o uso de Placeholders (`?`) nas consultas SQL para poder referenciar as minhas variáveis de input e eventualmente descobri que para proteger o sistema contra ataques de SQL Injection, uma das vulnerabilidades mais comuns em sistemas web, é essencial o uso dos Placeholders.
+* Segurança na Consulta (**Aprendizado**): Implementei o uso de Placeholders (`?`) nas consultas SQL para poder referenciar as minhas variáveis de input e eventualmente descobri que para proteger o sistema contra ataques de SQL Injection, uma das vulnerabilidades mais comuns em sistemas web, é essencial o uso dos Placeholders.
 
 ---
 
