@@ -49,6 +49,13 @@ Nesta secção, documento a evolução do projeto e os desafios superados:
 * Refatorei o código para utilizar funções (`def`), separando a lógica de gerar o hash, verificar a senha e efetuar o login.
 * Aprofundei os meus conhecimentos sobre encoding de caracteres, compreendendo como o **UTF-8** atua mapeando os caracteres em bytes (essencial para o funcionamento do `bcrypt`).
 
+#### **Dia 5: Integração Dinâmica e Persistência de Dados**
+* Login Dinâmico: Refatorei a lógica de autenticação para consultar o banco de dados em tempo real. Agora, o sistema utiliza o comando SQL `SELECT` para buscar o hash da senha associado ao  usuario em questão, eliminando o uso de variáveis fixas (hardcoded) como havia no código anterior.
+
+* Fluxo de Registro: Criei uma função de registro que captura o input do usuario, gera o hash via `bcrypt` e salva os dados de forma segura no SQLite usando o comando `INSERT`.
+
+* Segurança na Consulta (**Aprendizado:**): Implementei o uso de Placeholders (`?`) nas consultas SQL para poder referenciar as minhas variáveis de input e eventualmente descobri que para proteger o sistema contra ataques de SQL Injection, uma das vulnerabilidades mais comuns em sistemas web, é essencial o uso dos Placeholders.
+
 ---
 
 ### 🔧 Como Executar
