@@ -37,7 +37,7 @@ def login_pass(username:str, password:str):
         print("Login efetuado com sucesso!")
 
 # ==========================================================================================
-'''
+
 print("===== RANDOM WEBSITE LOGIN =====")
 
 login = str(input("Login: "))
@@ -46,7 +46,6 @@ user_pass = str(input("Senha: "))
 
 hashed = bcrypt_hash(user_pass)
 
-'''
 
 
 
