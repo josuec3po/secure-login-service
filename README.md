@@ -86,8 +86,10 @@ python login.py
 
 ### 📈 Próximos Passos
 
-* [ ] Integrar a função de login para consultar e validar utilizadores diretamente no SQLite.
-* [ ] Adicionar o tratamento `IF NOT EXISTS` na criação da tabela para evitar erros de execução.
-* [ ] Implementar um sistema de cadastro contínuo.
+* [ ] Tratamento de Exceções: Implementar blocos try/except para lidar com erros de conexão à base de dados ou ficheiro corrompido e erros de usuário.
+
+* [ ] Interface de Menu: Criar um menu principal que permita ao utilizador escolher entre (1) Login, (2) Registo ou (3) Sair, usando um loop while.
+
+* [ ] Validação de Força de Senha: Adicionar uma lógica que obrigue o novo utilizador a criar uma senha com pelo menos 8 caracteres e alguns caractéres especiais.
 
 ---
